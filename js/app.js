@@ -105,7 +105,7 @@ function quiz(name){
             score++;
         }
     }
-    let spices = ['pepper', 'chili', 'anise', 'nutmeg', 'cinnamon', 'fennel', 'ginger', 'basil', 'mint', 'oregano', 'thyme', 'parsley'];
+    let spices = ['pepper', 'chili', 'anise', 'nutmeg', 'cinnamon', 'fennel', 'ginger', 'basil', 'mint', 'oregano', 'thyme', 'parsley', 'garlic'];
     let correctAnswers = [];
     for (chances = 0; chances < 6; chances++){
         let guess = prompt(`What are Aoife's favorite herbs and spices? You have ${6-chances} guesses left.`);
