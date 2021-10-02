@@ -130,10 +130,11 @@ function quiz(name){
             alert(`Sorry, ${guess} isn't one of her favorites :(`);
         }
     }
+    alert(`The possible answers were: ${spices}`);
 
 
     alert('Thanks for playing, ' + name + "!");
-    document.write('You scored ' + score + ' out of 12 on the Aoife quiz. ')
+    document.write('You scored ' + score + ' out of 12 on the Aoife quiz. ');
     if(score >= 9){
         document.write('Well done, ' + name +'!');
     } else {
