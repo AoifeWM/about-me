@@ -45,3 +45,13 @@ img {
     font-size: 1rem;
     color:rgb(91, 111, 136)
 }
+
+ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+ol {
+    list-style: decimal;
+    margin-left: 2rem;
+}
