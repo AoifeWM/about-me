@@ -84,30 +84,30 @@ function juggle() {
   }
 }
 
-//function paint() {
-i = 0;
-while (i === 0) {
-  let paintAnswer = prompt('Does Aoife like to paint?');
-  if (
-    paintAnswer.toLowerCase() === 'yes' ||
-    paintAnswer.toLowerCase() === 'y'
-  ) {
-    //console.log('Correct');
-    alert('Yep, you got it!');
-    i++;
-    score++;
-  } else if (
-    paintAnswer.toLowerCase() === 'no' ||
-    paintAnswer.toLowerCase() === 'n'
-  ) {
-    //console.log('Incorrect');
-    alert('Sorry, you got it wrong :(');
-    i++;
-  } else {
-    alert('Please answer yes or no.');
+function paint() {
+  i = 0;
+  while (i === 0) {
+    let paintAnswer = prompt('Does Aoife like to paint?');
+    if (
+      paintAnswer.toLowerCase() === 'yes' ||
+      paintAnswer.toLowerCase() === 'y'
+    ) {
+      //console.log('Correct');
+      alert('Yep, you got it!');
+      i++;
+      score++;
+    } else if (
+      paintAnswer.toLowerCase() === 'no' ||
+      paintAnswer.toLowerCase() === 'n'
+    ) {
+      //console.log('Incorrect');
+      alert('Sorry, you got it wrong :(');
+      i++;
+    } else {
+      alert('Please answer yes or no.');
+    }
   }
 }
-//}
 
 //function portland() {
 i = 0;
