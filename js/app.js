@@ -3,15 +3,15 @@ let i = 0;
 let score = 0;
 let user = prompt('what is your name?');
 alert('Welcome to my About Me page, ' + user + '!');
-// function setName() {
-//   tortoises();
-//   squash();
-//   juggle();
-//   paint();
-//   portland();
-//   paintYears();
-//   spices();
-// }
+function setName() {
+  tortoises();
+  squash();
+  juggle();
+  paint();
+  portland();
+  paintYears();
+  spices();
+}
 
 function tortoises() {
   while (i === 0) {
