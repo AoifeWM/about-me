@@ -155,8 +155,8 @@ function paintYears() {
       chances = 5;
       score++;
     }
-    if (chances === 4) {
-      alert('The correct was four years.');
+    if (chances === 3) {
+      alert('The correct answer was four years.');
     }
   }
 }
