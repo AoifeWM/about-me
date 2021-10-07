@@ -34,27 +34,30 @@ function tortoises() {
   }
 }
 
-//function squash() {
-i = 0;
-while (i === 0) {
-  let growAnswer = prompt('Does Aoife grow squash?');
-  if (growAnswer.toLowerCase() === 'yes' || growAnswer.toLowerCase() === 'y') {
-    //console.log('Incorrect');
-    alert('Sorry, you got it wrong :( She grows peppers!');
-    i++;
-  } else if (
-    growAnswer.toLowerCase() === 'no' ||
-    growAnswer.toLowerCase() === 'n'
-  ) {
-    //console.log('Correct');
-    alert("That's right!");
-    i++;
-    score++;
-  } else {
-    alert('Please answer yes or no.');
+function squash() {
+  i = 0;
+  while (i === 0) {
+    let growAnswer = prompt('Does Aoife grow squash?');
+    if (
+      growAnswer.toLowerCase() === 'yes' ||
+      growAnswer.toLowerCase() === 'y'
+    ) {
+      //console.log('Incorrect');
+      alert('Sorry, you got it wrong :( She grows peppers!');
+      i++;
+    } else if (
+      growAnswer.toLowerCase() === 'no' ||
+      growAnswer.toLowerCase() === 'n'
+    ) {
+      //console.log('Correct');
+      alert("That's right!");
+      i++;
+      score++;
+    } else {
+      alert('Please answer yes or no.');
+    }
   }
 }
-//}
 
 //function juggle() {
 i = 0;
