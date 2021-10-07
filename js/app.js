@@ -161,49 +161,51 @@ function paintYears() {
   }
 }
 
-//function spices() {
-let chances = 0;
-let spices = [
-  'pepper',
-  'chili',
-  'anise',
-  'nutmeg',
-  'cinnamon',
-  'fennel',
-  'ginger',
-  'basil',
-  'mint',
-  'oregano',
-  'thyme',
-  'parsley',
-  'garlic',
-];
+function spices() {
+  let chances = 0;
+  let spices = [
+    'pepper',
+    'chili',
+    'anise',
+    'nutmeg',
+    'cinnamon',
+    'fennel',
+    'ginger',
+    'basil',
+    'mint',
+    'oregano',
+    'thyme',
+    'parsley',
+    'garlic',
+  ];
 
-for (let j = 6; j > chances; j--) {
-  let guess = prompt("What is one of Aoife's favorite herbs or spices?");
-  let correct = false;
-  for (let i = 0; i < spices.length; i++) {
-    if (guess.toLowerCase() === spices[i]) {
-      score++;
-      correct = true;
-      alert(`That's right! Aoife loves ${guess}!`);
+  for (let j = 6; j > chances; j--) {
+    let guess = prompt("What is one of Aoife's favorite herbs or spices?");
+    let correct = false;
+    for (let i = 0; i < spices.length; i++) {
+      if (guess.toLowerCase() === spices[i]) {
+        score++;
+        correct = true;
+        alert(`That's right! Aoife loves ${guess}!`);
+      }
     }
+    if (correct === false) {
+      alert(
+        `Sorry, that is incorrect.  You have ${[j - 1]} guesses remaining.`
+      );
+    }
+    if (correct) break;
   }
-  if (correct === false) {
-    alert(`Sorry, that is incorrect.  You have ${[j - 1]} guesses remaining.`);
+
+  alert(`The possible answers were: ${spices}`);
+
+  alert(`Thanks for playing, ${user}!`);
+  document.write('You scored ' + score + ' out of 7 on the Aoife quiz. ');
+  if (score >= 7) {
+    document.write('Well done, ' + user + '!');
+  } else {
+    document.write(
+      'Retake the quiz if you want to score higher, ' + user + '.'
+    );
   }
-  if (correct) break;
 }
-
-alert(`The possible answers were: ${spices}`);
-
-alert(`Thanks for playing, ${user}!`);
-document.write('You scored ' + score + ' out of 7 on the Aoife quiz. ');
-//   if (score >= 9) {
-//     document.write('Well done, ' + name + '!');
-//   } else {
-//     document.write(
-//       'Retake the quiz if you want to score higher, ' + name + '.'
-//     );
-//   }
-//}
