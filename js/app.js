@@ -134,29 +134,32 @@ function portland() {
   }
 }
 
-//function paintYears() {
-let chances = 0;
-let paintYears = 4;
-for (chances; chances < 4; chances++) {
-  let guess = prompt(
-    `How many years has Aoife been painting? You have ${
-      4 - chances
-    } guesses left.`
-  );
-  if (isNaN(guess)) {
-    alert('Please enter a number!');
-    chances--;
-  } else if (guess > paintYears) {
-    alert('Too high.');
-  } else if (guess < paintYears) {
-    alert('Too low.');
-  } else {
-    alert("You're right! ");
-    chances = 5;
-    score++;
+function paintYears() {
+  let chances = 0;
+  let paintYears = 4;
+  for (chances; chances < 4; chances++) {
+    let guess = prompt(
+      `How many years has Aoife been painting? You have ${
+        4 - chances
+      } guesses left.`
+    );
+    if (isNaN(guess)) {
+      alert('Please enter a number!');
+      chances--;
+    } else if (guess > paintYears) {
+      alert('Too high.');
+    } else if (guess < paintYears) {
+      alert('Too low.');
+    } else {
+      alert("You're right! ");
+      chances = 5;
+      score++;
+    }
+    if (chances === 4) {
+      alert('The correct was four years.');
+    }
   }
 }
-//}
 
 //function spices() {
 let chances = 0;
