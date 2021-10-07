@@ -109,27 +109,30 @@ function paint() {
   }
 }
 
-//function portland() {
-i = 0;
-while (i === 0) {
-  let bornAnswer = prompt('Was Aoife born in Portland?');
-  if (bornAnswer.toLowerCase() === 'yes' || bornAnswer.toLowerCase() === 'y') {
-    //console.log('Incorrect');
-    alert('Nope, she was born in Seattle.');
-    i++;
-  } else if (
-    bornAnswer.toLowerCase() === 'no' ||
-    bornAnswer.toLowerCase() === 'n'
-  ) {
-    //console.log('Correct');
-    alert("That's right! She was born in Seattle.");
-    i++;
-    score++;
-  } else {
-    alert('Please answer yes or no.');
+function portland() {
+  i = 0;
+  while (i === 0) {
+    let bornAnswer = prompt('Was Aoife born in Portland?');
+    if (
+      bornAnswer.toLowerCase() === 'yes' ||
+      bornAnswer.toLowerCase() === 'y'
+    ) {
+      //console.log('Incorrect');
+      alert('Nope, she was born in Seattle.');
+      i++;
+    } else if (
+      bornAnswer.toLowerCase() === 'no' ||
+      bornAnswer.toLowerCase() === 'n'
+    ) {
+      //console.log('Correct');
+      alert("That's right! She was born in Seattle.");
+      i++;
+      score++;
+    } else {
+      alert('Please answer yes or no.');
+    }
   }
 }
-//}
 
 //function paintYears() {
 let chances = 0;
