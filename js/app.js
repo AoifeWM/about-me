@@ -59,30 +59,30 @@ function squash() {
   }
 }
 
-//function juggle() {
-i = 0;
-while (i === 0) {
-  let juggleAnswer = prompt('Can Aoife Juggle?');
-  if (
-    juggleAnswer.toLowerCase() === 'yes' ||
-    juggleAnswer.toLowerCase() === 'y'
-  ) {
-    //console.log('Correct');
-    alert("You're right! She sure can!");
-    i++;
-    score++;
-  } else if (
-    juggleAnswer.toLowerCase() === 'no' ||
-    juggleAnswer.toLowerCase() === 'n'
-  ) {
-    //console.log('Incorrect');
-    alert('Sorry, you got it wrong :(');
-    i++;
-  } else {
-    alert('Please answer yes or no.');
+function juggle() {
+  i = 0;
+  while (i === 0) {
+    let juggleAnswer = prompt('Can Aoife Juggle?');
+    if (
+      juggleAnswer.toLowerCase() === 'yes' ||
+      juggleAnswer.toLowerCase() === 'y'
+    ) {
+      //console.log('Correct');
+      alert("You're right! She sure can!");
+      i++;
+      score++;
+    } else if (
+      juggleAnswer.toLowerCase() === 'no' ||
+      juggleAnswer.toLowerCase() === 'n'
+    ) {
+      //console.log('Incorrect');
+      alert('Sorry, you got it wrong :(');
+      i++;
+    } else {
+      alert('Please answer yes or no.');
+    }
   }
 }
-//}
 
 //function paint() {
 i = 0;
