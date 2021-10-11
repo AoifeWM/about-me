@@ -3,7 +3,7 @@ let i = 0;
 let score = 0;
 let user = prompt('what is your name?');
 alert('Welcome to my About Me page, ' + user + '!');
-function setName() {
+function aoifeQuiz() {
   tortoises();
   squash();
   juggle();

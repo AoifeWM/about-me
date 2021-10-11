@@ -1,12 +1,14 @@
 html{
-    background-color: rgb(177, 223, 235);
+    background-color: #c0c2e9;
 }
 
 header {
     padding: 1rem;
+    padding-left: 1.5rem;
     font-size: 2.5rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color:#6ac0a3;
+    background-color:#888aa7;
+    color: #dddcc7;
     border-radius: 1rem;
     position: sticky;
     top: 0;
@@ -15,9 +17,10 @@ header {
 }
 
 main {
-    padding: 2rem;
+    padding: 5rem;
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
+    color:#49292a;
 }
 
 footer {
@@ -25,7 +28,7 @@ footer {
     position: sticky;
     bottom: 0;
     padding: 1rem;
-    background-color: grey;
+    background-color: #dddcc7;
 }
 
 img {
@@ -42,16 +45,20 @@ img {
 
 #painting {
     text-align: center;
-    font-size: 1rem;
-    color:rgb(91, 111, 136)
+    font-size: 20px;
+    color:#49292a;
+}
+
+i {
+    font-style: italic;
 }
 
 ul {
     list-style: disc;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 ol {
     list-style: decimal;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
